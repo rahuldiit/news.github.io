@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="assest/css/contact.css">
+</head>
+
+<body>
+    <section class="home">
+
+    </section>
+    <header>
+        <div class="logo">
+            <img src="assest/img2/logo.png" alt="">
+        </div>
+        <div class="navlist">
+            <ul>
+                <li><a href="#">FEATURE <i class="fa fa-caret-down" style="font-size:14px;"></i> </a>
+                    <div class="dropdawn_menu">
+                        <ul>
+                            <li><a href="">Feature layout</a></li>
+                            <li><a href="">post layout</a></li>
+                            <li><a href="">page layout</a></li>
+                            <li><a href="">Entrtaiment skin</a></li>
+                            <li><a href="">small navigation</a></li>
+                            <li><a href="">wallpaper ad</a></li>
+                            <li><a href="">RTL Homepage</a></li>
+                            <li><a href="">Typography</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">BUYTHEME</a></li>
+                <li><a href="entertanment.php">ENTERTAINMENT</a></li>
+                <li><a href="video.php">POLITICS</a></li>
+                <li><a href="#">FASHION</a></li>
+                <li><a href="#">SPORTS</a></li>
+                <li><a href="#">TECH</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="fa fa-search" id="search_btn"></div>
+            <div class="fa fa-shopping-cart" id="cart_btn"></div>
+            <div class="fa fa-bars" id="bars_btn"></div>
+        </div>
+
+        <form action="" class="search_form">
+            <input type="search" id="search_box" placeholder="SEARCH">
+        </form>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <form action="datainsert.php" method="post">
+                <h2>Register Form</h2>
+                <div class="content">
+                    <div class="input_box">
+                        <label for="name">Fullname</label>
+                        <input type="text" placeholder="Enter Fullname" name="fname"  id="fname" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="username">username</label>
+                        <input type="text" placeholder="Enter username" name="uname"  id="uname" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="Enter your valid Email Address" name="email"  id="email" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="tel" placeholder="Enter Phone Number" name="number"  id="number" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="password">password</label>
+                        <input type="password" placeholder="Enter password" name="password" id="password" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="cpassword">confirm password</label>
+                        <input type="password" placeholder="confirm password" name="cpassword" id="cpassword" required>
+                    </div>
+                    <span class="gender_title">Gender</span>
+                    <div class="gender_category">
+                        <input type="radio" name="gender" value="Male" id="male" required>
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" value="Female" id="female" required>
+                        <label for="gender">Female</label>
+                        <input type="radio" name="gender" value="other" id="other" required>
+                        <label for="gender">other</label>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <input type="submit" placeholder="Register">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_item">
+            <div class="logo2">
+                <img src="assest/img2/logo.png" alt="">
+            </div>
+            <div class="icon">
+                <i class="fa fa-facebook" id="icon_footer"></i>
+                <i class="fa fa-twitter" id="icon_footer"></i>
+                <i class="fa fa-google" id="icon_footer"></i>
+                <i class="fa fa-linkedin" id="icon_footer"></i>
+                <i class="fa fa-youtube" id="icon_footer"></i>
+                <i class="fa fa-instagram" id="icon_footer"></i>
+                <i class="fa fa-pinterest" id="icon_footer"></i>
+                <i class="fa fa-tumblr" id="icon_footer"></i>
+            </div>
+            <div class="list_item">
+                <ul>
+                    <li><a href="">BUY THEME</a></li>
+                    <li><a href="entertanment.php">ENTERTAINMENT</a></li>
+                    <li><a href="">FASHION</a></li>
+                    <li><a href="">SPORTS</a></li>
+                    <li><a href="">BUSINESS</a></li>
+                    <li><a href="contact.php">CONTACTss</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="last_box">
+        <h6>Copyright © 2022 Zox News Theme. Theme by MVP Themes, powered by <a href="#"> WordPress.</a></h6>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

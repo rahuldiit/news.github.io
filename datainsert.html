@@ -1,0 +1,24 @@
+<?php
+include ('dbconnection.php');
+
+$fname = $_POST['fname'];
+$uname = $_POST['uname'];
+$email = $_POST['email'];
+$number = $_POST['number'];
+$password = $_POST['password'];
+$cpassword = $_POST['cpassword'];    
+$gender = $_POST['gender'];
+
+$sql = "INSERT INTO `contact_form` (`id`, `fullname`, `username`, `email`, `phone no`, `password`, `confirm password`, `gender`) VALUES (NULL, '$fname', '$uname', '$email', '$number', '$password', '$cpassword', '$gender')";
+
+if ($conn->query($sql)==true) {
+    echo "new rwcord added";
+}
+
+else{
+    echo "error";
+}
+
+$conn->close();
+
+?>

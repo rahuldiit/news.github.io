@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assest/css/video.css">
+    <title>bussiness</title>
+</head>
+
+<body>
+    <section class="home">
+
+    </section>
+    <header>
+        <div class="logo">
+            <img src="assest/img2/logo.png" alt="">
+        </div>
+        <div class="navlist">
+            <ul>
+                <li><a href="#">FEATURE <i class="fa fa-caret-down" style="font-size:14px;"></i> </a>
+                    <div class="dropdawn_menu">
+                        <ul>
+                            <li><a href="">Feature layout</a></li>
+                            <li><a href="">post layout</a></li>
+                            <li><a href="">page layout</a></li>
+                            <li><a href="">Entrtaiment skin</a></li>
+                            <li><a href="">small navigation</a></li>
+                            <li><a href="">wallpaper ad</a></li>
+                            <li><a href="">RTL Homepage</a></li>
+                            <li><a href="">Typography</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="index.php">BUYTHEME</a></li>
+                <li><a href="entertanment">ENTERTAINMENT</a></li>
+                <li><a href="#">POLITICS</a></li>
+                <li><a href="#">FASHION</a></li>
+                <li><a href="#">SPORTS</a></li>
+                <li><a href="#">TECH</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="contact.php">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="fa fa-search" id="search_btn"></div>
+            <div class="fa fa-shopping-cart" id="cart_btn"></div>
+            <div class="fa fa-bars" id="bars_btn"></div>
+        </div>
+
+        <form action="" class="search_form">
+            <input type="search" id="search_box" placeholder="SEARCH">
+        </form>
+    </header>
+    <section class="more_2news">
+        
+
+        <div class="card_container">
+            <div class="more">
+                <div class="new">
+                <span style="background-color: #ff005b;" class="entainment_2">BUSSINESS</span>
+                    <h1>Illinois’ financial crisis could bring the state to a halt</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="box_2">
+                        <div class="mk">
+                            <img src="assest/img2/img_27.jpg" alt="">
+                        </div>
+                        <h2>Published 4 years ago on October 9, 2019 <br> By <a href="" id="card_h"
+                                style="margin: 0;">zox new staff</a> </h2>
+    
+                    </div>
+                    <?php
+                    $db = mysqli_connect("localhost", "root", "", "news_web");
+                     $sql = "SELECT * FROM imges WHERE category='fashion'";
+                     $result = mysqli_query($db, $sql);
+                     while ($row = mysqli_fetch_array($result)) {
+                       echo "<div class='imga'>";
+                       echo "<img src='adminpanel/images/".$row['image']."'>";
+                       echo "</div>";
+                       echo "<div class='text'>";
+                       echo "<p>".$row['descripation']."</p>";
+                       echo "</div>";
+                     }
+                    
+                    ?>
+            </div>
+            
+        </div>
+        <div class="card_3">
+            <h6 style="color: #ccc;font-family: oswald;">ADVERTSEMENT</h6>
+            <div class="box_1">
+                <img src="assest/img2/img_10.jpg" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="" class="latest">LATEST</a></li>
+                    <li><a href="">VIDEOS</a></li>
+                    <li><a href="">GALLREIS</a></li>
+                </ul>
+            </div>
+            <div class="box_2">
+                <img src="assest/img2/gamer.jpg" alt="">
+                <div class="card_h" style="margin-left: 10px;">TECH /<span style="font-size: 12px;font-weight: 100;">4
+                        years ago</span><br>
+                    <a href="" id="card_h" style="margin: 0;">Mobile Google Ceo promises 11 daydreams
+                        -Compatible </a>
+                </div>
+            </div>
+            <div class="box_2">
+                <img src="assest/img2/superman.jpg" alt="">
+                <div class="card_h" style="margin-left: 10px;">TECH /<span style="font-size: 12px;font-weight: 100;">4
+                        years ago</span><br>
+                    <a href="" id="card_h" style="margin: 0;">Mobile Google Ceo promises 11 daydreams
+                        -Compatible </a>
+                </div>
+            </div>
+            <div class="box_2">
+                <img src="assest/img2/couple.jpg" alt="">
+                <div class="card_h" style="margin-left: 10px;">TECH /<span style="font-size: 12px;font-weight: 100;">4
+                        years ago</span><br>
+                    <a href="" id="card_h" style="margin: 0;">Mobile Google Ceo promises 11 daydreams
+                        -Compatible </a>
+                </div>
+            </div>
+            <span><a href="">MORE ENTERTAINMENT</a></span>
+        </div>
+        </div>
+    </section>
+    <section class="four_box">
+
+    </section>
+    <footer class="footer">
+        <div class="footer_item">
+            <div class="logo2">
+                <img src="assest/img2/logo.png" alt="">
+            </div>
+            <div class="icon">
+                <i class="fa fa-facebook" id="icon_footer"></i>
+                <i class="fa fa-twitter" id="icon_footer"></i>
+                <i class="fa fa-google" id="icon_footer"></i>
+                <i class="fa fa-linkedin" id="icon_footer"></i>
+                <i class="fa fa-youtube" id="icon_footer"></i>
+                <i class="fa fa-instagram" id="icon_footer"></i>
+                <i class="fa fa-pinterest" id="icon_footer"></i>
+                <i class="fa fa-tumblr" id="icon_footer"></i>
+            </div>
+            <div class="list_item">
+                <ul>
+                    <li><a href="">BUY THEME</a></li>
+                    <li><a href="entertanment.php">ENTERTAINMENT</a></li>
+                    <li><a href="">FASHION</a></li>
+                    <li><a href="">SPORTS</a></li>
+                    <li><a href="">BUSINESS</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="last_box">
+        <h6>Copyright © 2022 Zox News Theme. Theme by MVP Themes, powered by <a href="#"> WordPress.</a></h6>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
